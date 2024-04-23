@@ -1,0 +1,102 @@
+.Faq{
+ margin-top: 200px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ margin-bottom: 130px;
+
+
+ 
+ .title{
+    font-size: 2rem;
+    } 
+
+  .center{
+     
+  
+  .box{
+    transition: 0.3s ease;
+   
+    padding-block: 20px;
+    padding-inline: 10px;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .box-title{
+        text-align: center;
+    }
+
+    .box-subtitle{
+        text-align: center;
+        color: grey;
+    }
+
+    .img-box{
+        width: 80px;
+        height: 80px;
+        margin-inline: auto;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .btn-secondary{
+        transition: 0.3s ease all;
+        width: 150px;
+        padding-block: 10px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 50px;
+        cursor: pointer;
+        
+    }
+
+    .btn-secondary:hover{
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        user-select: none;
+    }
+
+  }
+  .box:hover{
+    box-shadow: rgba(0,0,0,.2) 0 1px 4px;
+    border-radius: 10px;
+  }
+
+  
+
+  }
+ 
+
+}
+
+@media  screen and (max-width:600px){
+  .Faq{
+    width: 90%;
+    margin-inline: auto;
+    .title{
+      font-size: 1.6rem;
+      text-align: center;
+    }
+   .main-box{
+      flex-direction: column;
+      gap: 30px;
+    .box{
+      .box-title{
+        font-size: 1.2rem;
+      }
+
+      .box-subtitle{
+        font-size: 0.8rem;
+      }
+    }
+   }
+
+  }
+}

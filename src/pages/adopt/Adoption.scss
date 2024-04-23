@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cedarville+Cursive&family=Libre+Baskerville:wght@700&family=Playfair+Display:wght@400;500&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+
+.Adoption{
+    margin-top: 40px;
+    .content-box{
+        color: white;
+        background-image: url(../../assests/adoptdog.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 75vh;
+         
+     
+        .box-overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+        }
+
+        .title{
+            padding-right: 800px ;
+            padding-left: 50px;
+            padding-top: 50px;
+            font-size: 5rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+        .sub-title{
+
+            padding-left: 50px;
+            font-size: 2rem;
+            font-family: 'Libre Baskerville', serif;
+            transform: translateX(-100%);
+            animation: subtitle 0.5s ease-in-out 1s  forwards ;
+        }
+    }
+    .feature-section{
+        position: relative;
+        margin-top: 80px;
+
+        .phone-corousel{
+            display: none;
+        }
+        
+        .title{
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--label);
+            padding: 10px;
+        }
+        .subtitle{
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--text);
+        }
+        
+        .corousel{
+            padding: 10px 100px;
+            .outer-flex{
+                width: 900px;
+             
+            }
+            .outer{
+               width: 1000px ;
+               overflow: hidden;
+            }
+            .inner{
+                width: 900px;
+                display: flex;
+                transition: all ease-in-out 0.5s;
+                gap: 40px;
+                
+                
+            }
+            
+        }
+        .lefticon{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            font-size: 2.5rem;
+            cursor: pointer;
+          }
+  
+          .righticon{
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              font-size: 2.5rem;
+              cursor: pointer;
+          }
+
+        
+
+    }
+    .doc{
+        margin-top: 80px;
+
+        .title{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 20px 0px;
+            color: var(--label);
+        }
+        .subtitle{
+            font-size: 1.5rem;
+            color:var(--label);
+            padding-block: 4px;
+            text-align: center;
+            color :var(--text);
+        }
+        .top-message{
+            
+            margin-top: 10px;
+            padding: 10px 200px;
+            color: var(--text);
+            text-align: center;
+
+        }
+
+        .set{
+            
+            padding: 50px 20px;
+            .flex{
+                flex: 1;
+                .img-box{
+                
+                    width: 200px;
+                    height: 200px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+            .article{
+                flex: 1;
+
+                .header{
+                    padding-block: 30px;
+                    text-align: center;
+                    font-size: 1.5rem;
+
+                }
+                .footer{
+                    padding: 5px 10px;
+                    text-align: center;
+                    color: var(--text);
+                }
+          
+            }
+        &:hover{
+            box-shadow: rgba(0,0,0,.1) 0 1px 4px;
+            border-radius: 10px;
+        }       
+        }
+
+
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+@keyframes subtitle {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+     transform: translateX(0);
+    }
+}
+
+@media screen and (max-width:600px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+  
+    .Adoption{
+     .content-box{
+        width: 100%;
+        height: 70vh;
+        background-image: url(../../assests/adoptdog1.jpg);
+        .title{
+            font-size: 3rem;
+        }
+        .sub-title{
+            font-size: 1.8rem;
+        }
+     }   
+     .feature-section{
+        width: 100%;
+
+        .phone-corousel{
+            display: block;
+            min-width: 500px;
+            .inner-card{
+            display: flex;
+            overflow: scroll;
+            }
+        }
+        
+        .title{
+            font-size: 1.8rem;
+        }
+        .subtitle{
+            font-size: 1.2rem;
+            padding-inline: 10px;
+        }
+        .corousel{
+            display: none;
+            
+          
+        }
+        .lefticon{
+            display: none;
+           font-size: 1.5rem;
+        }
+        .righticon{
+            display: none;
+           font-size: 1.5rem;
+        }
+     }
+
+     .doc{
+        width: 100%;
+        .title{
+            font-size: 1.8rem;
+        }
+        .subtitle{
+            font-size: 1.2rem;
+            padding-inline: 10px;
+        }
+        .top-message{
+            font-size: 0.9rem;
+            padding-inline: 10px;
+        }
+        .set{
+            flex-direction: column;
+            .header{
+               font-size: 1.1rem;
+            }
+            .footer{
+                font-size: 0.9rem;
+            }
+        }
+     }
+    }
+}

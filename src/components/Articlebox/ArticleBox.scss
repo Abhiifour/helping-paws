@@ -1,0 +1,59 @@
+.AtricleBox{
+    padding-block: 20px;
+    border: rgba(0,0,0,.5) 0 1px 4px;
+    box-shadow: rgba(0,0,0,.5) 0 1px 4px;
+    border-radius: 20px;
+    width: 350px;
+    padding-bottom: 40px;
+    cursor: pointer;
+    user-select: none;
+    .img-box{
+        margin-top: 8px;
+        width: 320px;
+        height: 200px;
+        margin-inline: auto;
+        border-radius: 8px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+
+    }
+    .title{
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        font-weight: lighter;
+        padding: 20px 10px;
+    }
+
+    .data{
+        font-size: 0.9rem;
+        font-weight: lighter;
+        padding-inline:  10px;
+        color: var(--text);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .AtricleBox{
+       width: 90%;
+        .img-box{
+        width: 90%;
+
+        img{
+            width: 100%;
+        }
+        }
+        .title{
+         
+           font-size: 1.2rem;
+        }
+        .data{
+           
+           font-size: 1rem;
+        }
+    }
+}

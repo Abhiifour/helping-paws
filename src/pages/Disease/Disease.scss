@@ -1,0 +1,123 @@
+.Disease{
+    margin-top: 80px;
+    position: relative;
+
+    .flex-section{
+        gap: 40px;
+
+        .main-section{
+            align-items:flex-start;
+            flex: 2;
+            .title{
+                padding-block: 15px;
+                font-size: 3rem;
+            }
+            .img-box{
+                width:100%;
+                margin-inline: auto;
+                height: 350px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            } 
+            .text{
+                padding-block: 40px;
+                padding-right: 10px;
+                text-align: left;
+                
+            }
+            .disease-title{
+                font-size: 1.8rem;
+                padding-block: 10px;
+            }
+            .disease-detail{
+                font-size: 0.97rem;
+                font-weight: 100;
+                padding-block: 20px ;
+                padding-right: 10px;
+                text-align: left;
+                color: var(--text);
+            }
+        }
+
+        .img-section{
+            
+            align-items: start;
+            flex: 1;
+            
+           
+            .absolute-section{
+                position: absolute;
+                top: 40px;
+                
+                .img-box{
+                    top: 40px;
+                    position: relative;
+                    width: 350px;
+                    height: 500px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .help-message{
+                        color: white;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 10px;
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+                    .help-text{
+                        text-align: center;
+                        top: 50px;
+                        font-size: 2rem;
+                        left: 10px;
+                        color: white;
+                        position: absolute;
+                    }
+                    button{
+                        cursor: pointer;
+                        color: white;
+                        position: absolute;
+                        bottom: 30px;
+                        left: 120px;
+                        font-size: 1.5rem;
+                    }
+
+                }
+            }
+            
+           
+        }
+    }
+}
+
+@media  screen and (max-width:600px)   {
+    .Disease{
+       
+        .flex-section{
+            padding-left: 8px;
+            flex-direction: column;
+        .main-section{
+        .title{
+            font-size: 2.5rem;
+        }
+        .text{
+            color: var(--text);
+        }
+        .img-box{
+            width: 100%;
+            padding-right: 8px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        }
+        .img-section{
+           display: none;
+        }
+        }
+    }
+}

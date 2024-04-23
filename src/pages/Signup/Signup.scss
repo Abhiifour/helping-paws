@@ -1,0 +1,116 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+
+    .btn{
+        position: absolute;
+        bottom: 50px;
+        left: 300px;
+        width: 150px;
+        height: 40px;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    }
+    .heading{
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        font-size: 4rem;
+
+    }
+    .gif-box{
+        position: absolute;
+        top: 60px;
+        left: 420px;
+        width: 100px;
+        height: 100px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .img-box{
+        width: 100%;
+        height: 700px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .signup-box{
+        border: 1px solid rgba($color: #000000, $alpha: 0.1);
+        width: 400px; 
+        padding: 50px;
+        box-shadow: rgba(0,0,0,.08) 0 1px 4px;
+        border-radius: 4px;
+        .center{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            label{
+                font-size: 1.3rem;
+            }
+
+            input{
+                padding-left: 10px;
+                width: 300px;
+                border-radius: 4px;
+                height: 40px;
+                font-size: 1.05rem;
+                font-weight: 100;
+            }
+
+            .btn-primary{
+                font-size: 1.1rem;
+                margin-top: 20px;
+                width: 300px;
+                border: none;
+                height: 40px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        }
+ 
+    }
+}
+@media screen and (max-width:600px){
+    .signup{
+        .heading{
+            padding-block: 10px;
+            width: 100%;
+            text-align: center;
+            position: static;
+            margin-top: 30px;
+            font-size: 2rem;
+            border: 1px solid rgba($color: #000000, $alpha: 0.1);
+        }
+        flex-direction: column;
+        gap: 20px;
+        .gif-box{
+            display: none;
+        }
+        .img-box{
+            width: 95%;
+            height: 350px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .signup-box{
+          form{
+            flex-direction: column;
+          }
+        }
+        .btn{
+            position: static;
+        }
+    }
+}

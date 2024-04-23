@@ -1,0 +1,46 @@
+.ArticleCorousel{
+    margin-block: 30px;
+    color: white;
+    margin-inline:auto ;
+   
+    height: 500px;
+    
+    
+
+    .outer{
+        position: relative;
+       
+        margin-inline: auto;
+        width: 900px;
+        height: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        .icon{
+            position: absolute;
+             font-size: 3rem;
+             color: black;
+             z-index: 99;
+             left: 0;
+             top: 40%;
+             cursor: pointer;
+         }
+         .icon2{
+             position: absolute;
+             font-size: 3rem;
+             color: black;
+             z-index: 99;
+             right: 0;
+             top: 40%;
+             cursor: pointer;
+         }
+
+     .inner{
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+     }
+    }
+
+ 
+
+    
+}

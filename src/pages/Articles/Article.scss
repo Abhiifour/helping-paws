@@ -1,0 +1,37 @@
+.Articles{
+    .title-main{
+        margin-block: 50px;
+        text-align: center;
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+    .corousel{
+        padding-block: 40px;
+    }
+    .article-box{
+        margin-top: 150px;
+        padding-left: 20px;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: flex-start;
+
+    }
+}
+
+@media screen and (max-width:600px)  {
+    .Articles{
+        .title-main{
+            font-size: 2rem;
+   
+        }
+        .corousel{
+            display: none;
+        }
+        .article-box{
+            gap: 20px;
+           padding-inline: auto;
+            width: 90%;
+            margin-inline: auto;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.Dropdown{
+    
+    .dropdown{
+        background-color:var(--primary-color);
+        display: inline-block;
+        padding: 10px;
+        color: var(--white-color);
+        cursor: pointer;
+        transition: 0.5s ease all;
+        position: relative;
+        
+
+
+        .title{
+            font-size: 1.2rem;
+     
+        }
+
+        
+        .content{
+            background-color: var(--primary-color);
+            min-width: 160px;
+            position: absolute;
+            left: -30px;
+            display: none;
+            border-radius: 4px;
+
+            li{
+                padding-block: 16px;
+                padding-inline: 16px;
+              
+            }
+            
+        }
+
+        li:hover{
+            background-color: #397691;
+            
+        }
+
+
+       
+
+    }
+    .dropdown:hover{
+        
+        .content{
+            display: block;
+        }
+       
+        
+    }
+}

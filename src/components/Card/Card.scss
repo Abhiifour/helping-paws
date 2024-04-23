@@ -1,0 +1,59 @@
+.Card{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    height: 430px;
+    border-radius: 25px;
+    transition: 0.3s ease all;
+    .card-container{
+
+        .img-box{
+           
+            border-radius: 25px;
+            margin-top: 30px;
+            overflow: hidden;
+            width: 250px;
+            height: 250px;
+            margin-inline: auto;
+
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .data{
+         padding-left: 20px;
+
+         .name{
+            font-size: 1.7rem;
+            color: var(--label);
+            padding: 8px 0px;
+         }
+         .breed{
+            font-size: 1.2rem;
+            color: var(--text);
+            padding: 2px;
+         }
+
+         .gender{
+            font-size: 1rem;
+            color: var(--text);
+            padding: 2px;
+         }
+
+         .location{
+            font-size: 1rem;
+            color: var(--text);
+            padding: 2px;
+         }
+        }
+    }
+&:hover{
+    transform: scale(1.003);
+    box-shadow: rgba(0,0,0,.08) 0 1px 4px;
+    
+}
+}
+

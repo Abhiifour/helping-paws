@@ -1,0 +1,94 @@
+.main{
+    width: 1200px;
+    margin-inline: auto;
+    .title{
+font-size: 36px;
+    }
+    .content{
+        display: flex;
+        gap: 150px;
+        align-items: center;
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+
+            img{
+                max-width: 400px;
+                max-height: 400px;
+            }
+
+            .icons-flex{
+                display: flex;
+                width: 180px;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+            }
+            .icon{
+                font-size: 60px;
+                margin-inline: auto;
+            }
+
+            .image-input{
+                 visibility: hidden;
+            }
+            
+        }
+
+        .main-box{
+        
+            display: flex;
+            flex-direction:column;
+            gap: 30px;
+            margin-top: 40px;
+            input{
+                width: 300px;
+                padding: 10px; 
+                border-radius: 5px;
+                font-size: 18px;
+                border: 1px solid black;
+            }
+            
+            label{
+                font-size: 28px;
+            }
+    
+            .flex-box{
+                display: flex;
+                gap: 20px;
+            }
+            .box{
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+    
+                select{
+                    font-size: 18px;
+                    width: 200px;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+    
+    
+            .btn{
+            font-size: 20px;
+            width: 200px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--primary-color);
+            color: white;
+            cursor: pointer;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            }
+        }
+    }
+}
