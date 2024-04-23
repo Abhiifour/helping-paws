@@ -38,7 +38,7 @@ function Pets() {
           </div>
 
           <div className="injury">
-            Injury - <span>{petData?.injury}</span>
+            Injury - <span>{petData?.injured}</span>
           </div>
           <div className="location">
             Location - <span>{petData?.location}</span>
