@@ -15,7 +15,7 @@ import {
 const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
 const Chat = () => {
-  console.log(API_KEY);
+
 
   const [messages, setMessages] = useState([
     {
