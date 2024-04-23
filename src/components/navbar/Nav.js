@@ -82,6 +82,7 @@ function Nav() {
           <h2 className="donate" onClick={createBlogs}>
             Write Blog
           </h2>
+          
           <h2 className="donate" onClick={() => navigate("/donate")}>
             Donate
           </h2>

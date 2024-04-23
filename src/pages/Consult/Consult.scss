@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+
+    .chatbox{
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid var(--primary-color);
+        width: 700px;
+        height: 550px;
+    }
+}

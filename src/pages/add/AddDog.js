@@ -2,20 +2,19 @@ import React, { useState } from "react";
 import "./AddDog.scss";
 import { supabase } from "../../auth/supabase";
 import { IoIosImage } from "react-icons/io";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 function AddDog() {
   const [name, setName] = useState("");
-  const [type, setType] = useState("");
+  const [type, setType] = useState("Dog");
   const [breed, setBreed] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
+  const [age, setAge] = useState("Puppyhood");
+  const [gender, setGender] = useState("Male");
   const [location, setLocation] = useState("");
-  const [injured, setInjured] = useState("");
+  const [injured, setInjured] = useState("No");
   const [url, setUrl] = useState();
   const [file, setFile] = useState();
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   const addDogs = async () => {
     try {
@@ -30,11 +29,10 @@ function AddDog() {
         injured: injured,
         imageid: id,
       });
-      
     } catch (e) {
       console.log(e);
     }
-    navigate("/")
+    navigate("/");
   };
 
   const handleImage = (e) => {

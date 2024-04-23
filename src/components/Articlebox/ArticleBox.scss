@@ -30,11 +30,17 @@
     }
 
     .data{
+        width: 350px;
         font-size: 0.9rem;
         font-weight: lighter;
         padding-inline:  10px;
         color: var(--text);
+        max-height: 140px;
+        overflow-y: scroll;
+    }::-webkit-scrollbar {
+        width: 4px;
     }
+    
 }
 
 @media screen and (max-width:600px) {
