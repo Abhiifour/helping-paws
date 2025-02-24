@@ -62,8 +62,7 @@ function Footer() {
     </div>
     <div className="banner ">
         
-        <h1 className="adopt" onClick={()=>navigate('/Adopt')}>Crafted with <span><BsFillHeartFill/></span> by Saumya.</h1>
-
+       
       </div>
       <ToastContainer/>
     </div>
