@@ -52,7 +52,7 @@ function About() {
           fellow pet lovers
         </div>
       </div>
-      <div className="box center">
+      {/* <div className="box center">
       <div className="img-box4">
         <img src={dev} alt="" />
       </div>
@@ -60,7 +60,8 @@ function About() {
         <p>Meet the Developer</p>
         <p className="name">Saumya Singh</p>
         </div>
-      </div>
+      </div> */}
+      
       </div>
     </div>
   );
