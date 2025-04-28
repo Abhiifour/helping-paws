@@ -1,10 +1,12 @@
 .About{
     h1{
         text-align: center;
+        margin-top: 150px;
         font-size: 3rem;
     }
     .about-box{
         .box{
+            font-size: 1.1rem;
             flex-direction: column;
             .img-box{
                 width: 600px;
@@ -52,6 +54,7 @@
             }
             p{
                 padding-block: 10px;
+                
                 
             }
 

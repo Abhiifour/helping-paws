@@ -1,8 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 
 export const supabase = createClient(
-  "https://ldcmoegvkqeewzgbkehq.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkY21vZWd2a3FlZXd6Z2JrZWhxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMzNzY3NzEsImV4cCI6MjAyODk1Mjc3MX0.7o4SKbWkWNndXbo1S-BCsKAP7DTzf58we-mn82mDnA0"
+  "https://ypqetmolacmcjkwsijjn.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwcWV0bW9sYWNtY2prd3NpampuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI4ODczMDcsImV4cCI6MjA1ODQ2MzMwN30.zN6YE13A11eXRkXKVUdg8cbnhLLEZFsQ7JZFViaF6ps"
 );
 
 export const signup = async ({ name, email, password }) => {
@@ -24,3 +24,20 @@ export const login = async ({ email, password }) => {
     return data;
   } catch (e) {}
 };
+
+
+export const GoogleSignIn = async () => {
+  
+  const { user, session, error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+    });
+    
+    if (error) {
+      console.error('Error signing in with Google:', error.message);
+    } else {
+      console.log('Signed in as:', user);
+      return user;
+    }
+};
+
+

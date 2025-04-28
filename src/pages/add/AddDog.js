@@ -55,18 +55,21 @@ function AddDog() {
       <div className="title">Rehome a Pet</div>
       <div className="content">
         <div className="main-box">
-          <label for="fname">Pet's Name</label>
+          <div className="box">
+          <label htmlFor="fname">Pet's Name</label>
           <input
             type="text"
             id="fname"
             name="fname"
-            placeholder="Please enter your pets name"
+            placeholder="Please enter your pet's name"
             onChange={(e) => setName(e.target.value)}
           />
 
+          </div>
+         
           <div className="flex-box">
             <div className="box">
-              <label for="type">Pet Type</label>
+              <label htmlFor="type">Pet Type</label>
               <select
                 name="type"
                 id="type"
@@ -77,12 +80,12 @@ function AddDog() {
               </select>
             </div>
             <div className="box">
-              <label for="breed">Pet's Breed</label>
+              <label htmlFor="breed">Pet's Breed</label>
               <input
                 type="text"
                 id="breed"
                 name="breed"
-                placeholder="Please enter your pets breed"
+                placeholder="Please enter your pet's breed"
                 onChange={(e) => setBreed(e.target.value)}
               />
             </div>
@@ -90,7 +93,7 @@ function AddDog() {
 
           <div className="flex-box">
             <div className="box">
-              <label for="age">Age of Pet</label>
+              <label htmlFor="age">Age of Pet</label>
               <select
                 name="age"
                 id="age"
@@ -104,7 +107,7 @@ function AddDog() {
             </div>
 
             <div className="box">
-              <label for="gender">Pet Gender</label>
+              <label htmlFor="gender">Pet Gender</label>
               <select
                 name="gender"
                 id="gender"
@@ -118,17 +121,17 @@ function AddDog() {
 
           <div className="flex-box">
             <div className="box">
-              <label for="location">Pet's Location</label>
+              <label htmlFor="location">Pet's Location</label>
               <input
                 type="text"
                 id="location"
                 name="location"
-                placeholder="Please enter Location"
+                placeholder="Please enter location"
                 onChange={(e) => setLocation(e.target.value)}
               />
             </div>
             <div className="box">
-              <label for="injured">Injured</label>
+              <label htmlFor="injured">Injured</label>
               <select
                 name="injured"
                 id="injured"
@@ -152,11 +155,11 @@ function AddDog() {
             </div>
             <input
               type="file"
-              className="image-input "
+              className="image-input"
               onChange={handleImage}
             />
           </label>
-          <img src={url} alt="" />
+          {url && <img src={url} alt="Pet Preview" />}
         </div>
       </div>
     </div>

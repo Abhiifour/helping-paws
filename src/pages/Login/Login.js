@@ -3,7 +3,7 @@ import "./Login.scss";
 import { Link, useNavigate } from "react-router-dom";
 import dogesh from "../../assests/person-gardening.png";
 import gif from "../../assests/golden-retriever.gif";
-import { login } from "../../auth/supabase";
+import { GoogleSignIn, login } from "../../auth/supabase";
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -19,6 +19,17 @@ function Login() {
       console.log(e);
     }
   };
+
+  const handleGoogleLogin = async () => {
+    try {
+      const res = await GoogleSignIn();
+      if (res) {
+        navigate("/");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  }
 
   return (
     <div className="Login container">
@@ -49,6 +60,11 @@ function Login() {
           />
           <button className="btn-primary" onClick={handleSubmit}>
             Login
+          </button>
+
+
+          <button className="btn-primary" onClick={handleGoogleLogin}>
+            Login with Google
           </button>
           <p>
             Not Registered ? <Link to="/signup">Signup</Link>{" "}

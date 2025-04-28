@@ -44,13 +44,16 @@
         .title{
             text-align: center;
             font-size: 2.5rem;
+            font-weight: 500px;
+            margin-bottom: 10px;
             color: var(--label);
             padding: 10px;
         }
         .subtitle{
-            padding-bottom: 20px;
+            padding-bottom: 80px;
             text-align: center;
             font-size: 1.5rem;
+            font-weight: 400;
             color: var(--text);
         }
         
@@ -94,11 +97,12 @@
 
     }
     .doc{
-        margin-top: 80px;
+        margin-top: 160px;
 
         .title{
             font-size: 2.5rem;
             text-align: center;
+            font-weight: 500px;
             padding: 20px 0px;
             color: var(--label);
         }
@@ -106,6 +110,8 @@
             font-size: 1.5rem;
             color:var(--label);
             padding-block: 4px;
+            font-weight: 500;
+            margin-bottom: 100px;
             text-align: center;
             color :var(--text);
         }
@@ -113,6 +119,9 @@
             
             margin-top: 10px;
             padding: 10px 200px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
             color: var(--text);
             text-align: center;
 

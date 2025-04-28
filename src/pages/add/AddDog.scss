@@ -1,94 +1,122 @@
-.main{
+.main {
     width: 1200px;
+    margin-block: 150px;
     margin-inline: auto;
-    .title{
-font-size: 36px;
+    padding: 20px;
+  
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .content{
+  
+    .content {
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+      align-items: center;
+  
+      .right {
         display: flex;
-        gap: 150px;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-
-        .right{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 400px;
-            height: 400px;
-
-            img{
-                max-width: 400px;
-                max-height: 400px;
-            }
-
-            .icons-flex{
-                display: flex;
-                width: 180px;
-                cursor: pointer;
-                align-items: center;
-                justify-content: center;
-            }
-            .icon{
-                font-size: 60px;
-                margin-inline: auto;
-            }
-
-            .image-input{
-                 visibility: hidden;
-            }
-            
+        width: 400px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background-color: #f9f9f9;
+  
+        img {
+          max-width: 100%;
+          max-height: 350px;
+          object-fit: cover;
+          border-radius: 8px;
+          margin-top: 15px;
         }
-
-        .main-box{
-        
-            display: flex;
-            flex-direction:column;
-            gap: 30px;
-            margin-top: 40px;
-            input{
-                width: 300px;
-                padding: 10px; 
-                border-radius: 5px;
-                font-size: 18px;
-                border: 1px solid black;
-            }
-            
-            label{
-                font-size: 28px;
-            }
-    
-            .flex-box{
-                display: flex;
-                gap: 20px;
-            }
-            .box{
-                display: flex;
-                gap: 20px;
-                flex-direction: column;
-    
-                select{
-                    font-size: 18px;
-                    width: 200px;
-                    padding: 10px;
-                    border-radius: 5px;
-                }
-            }
-    
-    
-            .btn{
-            font-size: 20px;
-            width: 200px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid var(--primary-color);
-            color: white;
-            cursor: pointer;
+  
+        .icons-flex {
+          display: flex;
+          width: 180px;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+          background-color: #eee;
+          padding: 10px;
+          border-radius: 8px;
+          border: 1px solid #ddd;
+        }
+  
+        .icon {
+          font-size: 60px;
+          color: var(--primary-color);
+        }
+  
+        .image-input {
+          visibility: hidden;
+        }
+      }
+  
+      .main-box {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+        label {
+          font-size: 20px;
+          font-weight: 600;
+          color: #333;
+        }
+  
+        input,
+        select {
+          width: 100%;
+          padding: 12px;
+          border-radius: 8px;
+          font-size: 18px;
+          border: 1px solid #ddd;
+          margin-top: 8px;
+        }
+  
+        .flex-box {
+          display: flex;
+          gap: 20px;
+        }
+  
+        .box {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+  
+        .btn {
+          font-size: 20px;
+          width: 75%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--primary-color);
+          color: white;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          border: none;
+  
+          &:hover {
             background-color: var(--primary-color);
-            border-radius: 5px;
-            }
+          }
         }
+      }
     }
-}
+  }
+  

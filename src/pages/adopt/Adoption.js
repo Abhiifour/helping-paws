@@ -193,28 +193,7 @@ function Adoption() {
             </div>
           </div>
         </div>
-        <div className="set center">
-          <div className="flex center">
-            <div className="img-box">
-              <img src={img5} alt="img" />
-            </div>
-          </div>
-          <div className="article">
-            <div className="header">Breeders And Their Games</div>
-            <div className="footer">
-              Dog breeding in India is a largely unregulated business. Breeders
-              often exploit dogs and owners. They not only resort to the harmful
-              practice of getting the female dog carry several litters a year;
-              they also take away her pups from her way before three months.
-              Many experts believe that a newborn must spend at least 90 days
-              with her mother to grow into a healthy adult, learn how to
-              navigate the world and other acceptable and unacceptable dog
-              behaviour, such as not to bite too hard while playing with other
-              dogs, etc. Pups that are separated from their mothers before time
-              could develop serious health and behavioural issues.
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
   );

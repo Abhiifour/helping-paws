@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import dogImg from "../../assests/dog4.jpg";
-import "./Card.scss";
 import { supabase } from "../../auth/supabase";
 import { petState } from "../../Atom";
 import { useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
+import "./Card.scss";
 
 function Card({ name, breed, gender, age, image, injured, location, type }) {
   const [imageUrl, setImageUrl] = useState();
@@ -35,6 +34,7 @@ function Card({ name, breed, gender, age, image, injured, location, type }) {
 
     navigate("/pet");
   };
+
   useEffect(() => {
     getImage();
   }, []);
@@ -43,13 +43,17 @@ function Card({ name, breed, gender, age, image, injured, location, type }) {
     <div className="Card" onClick={setDogState}>
       <div className="card-container">
         <div className="img-box">
-          <img src={imageUrl?.publicUrl} />
+          <img src={imageUrl?.publicUrl || image} alt={name} />
         </div>
         <div className="data">
           <h2 className="name">{name}</h2>
           <h4 className="breed">{breed}</h4>
+          <div className="details">
           <p className="gender">{gender}</p>
-          <p className="location">{age}</p>
+          <p className="age">{age}</p>
+          <p className="location">{location}</p>
+          </div>
+          
         </div>
       </div>
     </div>

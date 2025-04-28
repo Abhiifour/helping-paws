@@ -19,7 +19,7 @@ function Faq() {
           <div className="box-subtitle">
             Help make the transition, as smooth as possible.
           </div>
-          <button className="btn-secondary" onClick={()=>navigate('/Adopt')}>LEARN MORE</button>
+          <button className="btn-secondary" onClick={()=>navigate('/Adopt')}>KNOW MORE</button>
         </div>
         <div className="box center">
         <div className="img-box">
@@ -29,7 +29,7 @@ function Faq() {
           <div className="box-subtitle">
           Want help searching? Sign up for Free or Premium New Pet Alerts, and we'll email you new matches.
           </div>
-          <button className="btn-secondary" onClick={()=>navigate('/signup')}>LEARN MORE</button>
+          <button className="btn-secondary" onClick={()=>navigate('/signup')}>KNOW MORE</button>
         </div>
         <div className="box center">
         <div className="img-box">
@@ -39,7 +39,7 @@ function Faq() {
           <div className="box-subtitle">
           Get answers to questions you haven't thought of.
           </div>
-          <button className="btn-secondary" onClick={()=> navigate('/Rescue')}>LEARN MORE</button>
+          <button className="btn-secondary" onClick={()=> navigate('/Rescue')}>KNOW MORE</button>
         </div>
 
       </div>
